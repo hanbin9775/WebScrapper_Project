@@ -62,7 +62,7 @@ html {
 body {
 	font-family: 'Roboto Mono';
 	margin: 0px;
-	color: var(--color-green);
+	color: var(--text-color);
 	background-color: var(--background-color);
 }
 
