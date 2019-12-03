@@ -23,14 +23,35 @@
         <div id = "content">
             <form action="{% url 'new_search' %}" method="post">
                 {% csrf_token %}
-                <input type="radio" name="search" value="mon" checked> Monday<br>
-                <input type="radio" name="search" value="tue" > Tuesday<br>
-                <input type="radio" name="search" value="wed" > Wednesday<br>
-                <input type="radio" name="search" value="thu" > Thursday<br>
-                <input type="radio" name="search" value="fri" > Friday<br>
-                <input type="radio" name="search" value="sat" > Saturday<br>
-                <input type="radio" name="search" value="sun" > Sunday<br>
-                <button class="btn waves-effect waves-light" type="submit" name="action">Submit                    
+                <label class="container">
+                    <input type="radio" name="search" value="mon" checked> Monday<br>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="search" value="tue"> Tuesday<br>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="search" value="wed"> Wednesday<br>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="search" value="thu"> Thursday<br>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="search" value="fri"> Friday<br>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="search" value="sat"> Saturday<br>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">
+                    <input type="radio" name="search" value="sun"> Sunday<br>
+                    <span class="checkmark"></span>
+                </label>
+                <button class="btn-1" type="submit" name="action"> Select                 
                 </button>
             </form>
         </div>
